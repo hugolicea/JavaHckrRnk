@@ -1,4 +1,5 @@
 package solution;
+
 import java.util.List;
 
 public class Result {
@@ -8,9 +9,9 @@ public class Result {
 	 */
 	public static void plusMinus(List<Integer> arr) {
 		int numElements = arr.size();
-		int posElements = 0;
-		int negElements = 0;
-		int zeroo = 0;
+		float posElements = 0;
+		float negElements = 0;
+		float zeroo = 0;
 
 		for (int i = 0; i < numElements; i++) {
 			if (arr.get(i) > 0)

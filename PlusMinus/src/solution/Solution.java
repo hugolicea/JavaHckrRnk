@@ -1,23 +1,21 @@
 package solution;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Solution {
 
-	public static void main(String[] args) throws IOException {
-		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String[] args) {
 
-		int n = Integer.parseInt(bufferedReader.readLine().trim());
-
-		List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-				.map(Integer::parseInt).collect(toList());
-
+		List<Integer> arr = new ArrayList<Integer>();
+		arr.add(-1);
+		arr.add(-2);
+		arr.add(-3);
+		arr.add(0);
+		arr.add(1);
+		arr.add(2);
+		arr.add(3);
 		Result.plusMinus(arr);
-
-		bufferedReader.close();
 	}
 
 }

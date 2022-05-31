@@ -16,9 +16,11 @@ public class Solution {
 		a.add(2);
 		a.add(1);
 
-		int result = Result.lonelyinteger(a);
+		int result = Result.lonelyInteger(a);
 		System.out.println(result);
 
+		int other = Result.lonelyIntegerusingXOR(a);
+		System.out.println(other);
 	}
 
 }

@@ -9,14 +9,16 @@ public class Result {
 	 * INTEGER_ARRAY a as parameter.
 	 */
 
-	public static int lonelyinteger(List<Integer> a) {
-		int unique = 0;
-		int numElements = a.size();
+	public static int lonelyInteger(List<Integer> a) {
 
-		for (int i = 0; i < numElements; i++) {
+		long startTime = System.nanoTime();
+
+		int unique = 0;
+
+		for (int i = 0; i < a.size(); i++) {
 			int numTocompare = a.get(i);
 			int count = 0;
-			for (int j = 0; j < numElements; j++) {
+			for (int j = 0; j < a.size(); j++) {
 				int elementToCompare = a.get(j);
 				if (i != j) {
 					if (numTocompare == elementToCompare)
@@ -27,6 +29,21 @@ public class Result {
 				unique = numTocompare;
 			}
 		}
+		System.out.println(System.nanoTime() - startTime);
 		return unique;
+	}
+
+	public static int lonelyIntegerusingXOR(List<Integer> a) {
+
+		long startTime = System.nanoTime();
+
+		int result = a.get(0);
+
+		for (int i = 1; i < a.size(); i++) {
+			result ^= a.get(i);
+		}
+
+		System.out.println(System.nanoTime() - startTime);
+		return result;
 	}
 }

@@ -102,9 +102,13 @@ public class Solution {
 			}
 		};
 
-		List<Integer> result = Result.countingSort(arr);
+		long startTime = System.nanoTime();
+		System.out.println(Result.countingSort(arr));
+		System.out.println(System.nanoTime() - startTime);
 
-		System.out.println(result);
+		long startTimeB = System.nanoTime();
+		System.out.println(Result.countingSortBucle(arr));
+		System.out.println(System.nanoTime() - startTimeB);
 
 	}
 

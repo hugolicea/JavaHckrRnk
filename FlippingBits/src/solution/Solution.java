@@ -8,9 +8,8 @@ public class Solution {
 
 		long n = Long.parseLong("2147483647");
 
-		long result = Result.flippingBits(n);
-
-		System.out.println(result);
+		System.out.println(Result.flippingBits(n));
+		System.out.println(Result.flippongBitsUsingBitwiseNOTOperator(n));
 	}
 
 }

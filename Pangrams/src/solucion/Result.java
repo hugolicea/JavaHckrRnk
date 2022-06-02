@@ -22,8 +22,9 @@ public class Result {
 		return "pangram";
 	}
 	/*
-	 * public static String pangrams(String s) { boolean res = false; char[] arrAux
-	 * = new char[26]; arrAux = setAlphabet();
+	 * public static String pangrams(String s) { 
+	 * boolean res = false; 
+	 * char[] arrAux = new char[26]; arrAux = setAlphabet();
 	 * 
 	 * for (char car : arrAux) { res = false; for (int i = 0; i < s.length(); i++) {
 	 * if (car == Character.toLowerCase(s.charAt(i))) { res = true; i = s.length();

@@ -7,6 +7,7 @@ public class Result {
 	 */
 
 	public static long flippingBits(long n) {
+		long startTime = System.nanoTime();
 
 		String pattern = "00000000000000000000000000000000";
 
@@ -21,6 +22,20 @@ public class Result {
 				flipBin += '0';
 		}
 		long result = Long.parseLong(flipBin, 2);
+
+		System.out.println("Using bucles: " + (System.nanoTime() - startTime));
 		return result;
 	}
+
+	public static long flippongBitsUsingBitwiseNOTOperator(long n) {
+
+		long startTime = System.nanoTime();
+
+		long result = (long) (Math.pow(2, 32) + ~n);
+
+		System.out.println("NOTOperator: " + (System.nanoTime() - startTime));
+		return result;
+
+	}
+
 }

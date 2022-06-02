@@ -14,10 +14,12 @@ public class Result {
 
 		for (int i = 0; i < arr.size(); i++) {
 			firstDiagonal += arr.get(i).get(i);
-		}
-		for (int i = 0; i < arr.size(); i++) {
 			secondDiagonal += arr.get(i).get(arr.size() - (i + 1));
 		}
+		/*
+		 * for (int i = 0; i < arr.size(); i++) { secondDiagonal +=
+		 * arr.get(i).get(arr.size() - (i + 1)); }
+		 */
 
 		return Math.abs(firstDiagonal - secondDiagonal);
 

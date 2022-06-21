@@ -9,6 +9,7 @@ public class Solution {
 
 		List<List<Integer>> matrix = Arrays.asList(Arrays.asList(112, 42, 83, 19), Arrays.asList(56, 125, 56, 49),
 				Arrays.asList(15, 78, 101, 43), Arrays.asList(62, 98, 114, 108));
+		System.out.println(flippingMatrix(matrix));
 
 	}
 
